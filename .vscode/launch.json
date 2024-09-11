@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb-linux) Launch server",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/server",
+            "args": ["3000"],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Build with CMake"
+        },
+        {
+            "name": "(lldb-linux) Launch client",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/client",
+            "args": ["Name1", "3000", "1"],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Build with CMake"
+        }
+    ]
+}
